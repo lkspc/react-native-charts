@@ -1,21 +1,27 @@
 {
   "name": "@lkspc/react-native-charts",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Bring web charts to React Native.",
   "main": "index.js",
+  "typings": "index.d.ts",
   "license": "MIT",
   "repository": "https://github.com/lkspc/react-native-charts.git",
   "author": "lkspc <lkspc@qq.com>",
+  "scripts": {
+    "build": "tsc",
+    "pub": "npm publish --access=publish --registry https://registry.npmjs.org/"
+  },
   "peerDependencies": {
-    "react": "*",
-    "react-native": "*",
-    "react-native-webview": "*"
+    "react": "^16.13.1",
+    "react-native": "^0.62.2",
+    "react-native-webview": "^9.2.2"
   },
   "devDependencies": {
     "@types/react": "^16.9.34",
     "@types/react-native": "^0.62.3",
     "react": "^16.13.1",
     "react-native": "^0.62.2",
-    "react-native-webview": "^9.2.2"
+    "react-native-webview": "^9.2.2",
+    "typescript": "^3.8.3"
   }
 }

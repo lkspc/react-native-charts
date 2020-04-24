@@ -4,7 +4,7 @@ import { getHtml } from './template';
 
 type Chart = {};
 
-type Props = {
+type ChartProps = {
   script: string;
   width?: number | string;
   height?: number | string;
@@ -29,7 +29,7 @@ export default function ChartView({
   onLoad,
   onChange,
   ...props
-}: Props) {
+}: ChartProps) {
   const [isReady, setIsReady] = useState(false);
   const instance = useRef<WebView>(null);
 
@@ -82,5 +82,5 @@ export default function ChartView({
 }
 
 export function createChartView(script: string) {
-  return (props: Props) => <ChartView script={script} {...props} />;
+  return (props: ChartProps) => <ChartView script={script} {...props} />;
 }
